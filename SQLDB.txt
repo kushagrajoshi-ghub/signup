@@ -1,0 +1,9 @@
+CREATE TABLE `user` (
+  `userid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `full_name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `created_by` varchar(100) NOT NULL DEFAULT 1,
+  `is_admin` varchar(100) NOT NULL DEFAULT 'true',
+   created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)
